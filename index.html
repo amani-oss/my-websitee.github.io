@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">//لضمان عرض الموفعبشكل صحيح على الأجهزة المحمولة
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Welcome to My CV</h1>
+            <p>Hi, I'm Gheffari Amani, Frontend Developer</p>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+             <!-- LinkedIn Profile Link in Header -->
+             <a href="https://www.linkedin.com/in/Amani Gheffari" target="_blank" rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        
+        <!-- Home Section -->
+        <section id="home">
+            <div class="image-container">
+                <img src="your-image.jpg" alt="Profile Image">
+            </div>
+            <div class="text-container">
+                <h2>About Me</h2>
+                <p>Hello! My name is Gheffari Amani, and I'm a Computer Science student. I am interested in technology and enjoy working on projects that help me grow and innovate.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor's Degree 14</strong> from University Ziane Achour, 2023</li>
+                <li><strong>Certificate in English</strong> from IELTS, 2024</li>
+            </ul>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Freelance Web Developer</strong></li>
+                <li><p>Specializing in front-end and back-end web development, using tools like React, Node.js, PostgreSQL, and more.</p></li>
+            </ul>
+            <div class="tools-container">
+                <div class="tools-box front-end-tools">
+                    <h3>Front-End Tools</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                        <li>Angular</li>
+                        <li>Bootstrap</li>
+                        <li>Sass</li>
+                    </ul>
+                </div>
+                <div class="tools-box back-end-tools">
+                    <h3>Back-End Tools</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>PostgreSQL</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+       <!-- Projects Section -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+        
+        <!-- Personal Portfolio Website Project -->
+        <div class="project-box">
+            <img src="portfolio.jpg" alt="Portfolio Project" loading="lazy"> <!-- Your portfolio image -->
+            <h3>Personal Portfolio Website</h3>
+            <p>A website that showcases my skills, work experience, and projects. It is fully responsive and built using React.</p>
+            <a href="https://yourportfolio.com" target="_blank" rel="noopener noreferrer">Visit Portfolio</a>
+        </div>
+        
+        <div class="project-box">
+            <img src="ecommerce.jpg" alt="E-Commerce Project"loading="lazy">
+            <h3>E-Commerce Store</h3>
+            <p>
+                A mock e-commerce website with product listings, a shopping cart, and checkout functionality. Built with WordPress and WooCommerce.
+                <a href="http://localhost/seller/" target="_blank" rel="noopener noreferrer">Visit the E-Commerce Store</a>
+            </p>
+        </div>
+        
+        
+        <!-- Weather App Project -->
+        <div class="project-box">
+            <img src="weatherapp.jpg" alt="Weather App"loading="lazy"> <!-- Weather app image -->
+            <h3>Weather App</h3>
+            <p>A simple weather app that fetches live weather data from OpenWeather API. It shows current weather and a 5-day forecast.</p>
+            <a href="https://yourweatherapp.com" target="_blank" rel="noopener noreferrer">Visit Weather App</a>
+        </div>
+        
+    </div>
+</section>
+
+
+
+        <!-- Skills Section -->
+        <section id="skill">
+            <h2>Skills</h2>
+            <ul>
+                <li>Problem-solving</li>
+                <li>SEO Basics</li>
+                <li>Web Development</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+             <!-- LinkedIn Profile Link in Contact Section -->
+             <p>Connect with me on <a href="https://www.linkedin.com/in/Gheffari Amani" target="_blank" rel="noopener noreferrer" class="linkedin-link">LinkedIn</a></p>
+            
+        </section>
+    
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Gheffari Amani. All rights reserved.</p>
+        <p>Designed by Gheffari Amani. Connect with me on <a href="https://www.linkedin.com/in/Gheffari Amani" target="_blank" rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>.</p>
+    </footer>
+
+<script> // Form validation
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        // Prevent form submission until validation is done
+        event.preventDefault();
+    
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+    
+        // Regular expression for email validation
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    
+        // Validate fields
+        if (name === "") {
+            alert("Please enter your name.");
+            return;
+        }
+    
+        if (email === "" || !emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+    
+        if (message === "") {
+            alert("Please enter your message.");
+            return;
+        }
+    
+        // If all fields are valid, submit the form (you can replace this with an actual submission if needed)
+        alert("Form submitted successfully!");
+        // You can actually submit the form if needed:
+        // this.submit(); // Uncomment this line to submit the form after validation
+    });
+    </script>
+</body>
+</html>
+ 

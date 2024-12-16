@@ -1,0 +1,401 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #c9a6e5, #b3cde0); /* Lighter Gradient between Purple and Blue */
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Navigation Styling */
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Align the navigation links to the right */
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Change to yellow on hover */
+}
+
+/* Main Section */
+main {
+    padding: 40px 0;
+    text-align: center; /* Center content */
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px; /* Increased the space after Home section */
+}
+
+#home .image-container {
+    flex: 1;
+}
+
+#home img {
+    width: 100%;
+    height: auto;
+    max-width: 350px; /* Set a max-width for the image */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+#home .text-container {
+    flex: 2;
+    text-align: left;
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Education Section */
+#education {
+    text-align: center;
+    margin-bottom: 50px; /* Increased the space between sections */
+}
+
+#education h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#education ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#education li {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Work Experience Section */
+#experience {
+    text-align: center;
+    margin-top: 50px; /* Increased the space between sections */
+}
+
+#experience h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Rectangular Boxes for Front-End & Back-End Tools */
+.tools-container {
+    display: flex;
+    justify-content: center; /* Center the tools boxes */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tools-box {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Center content inside the box */
+}
+
+.tools-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* List Styling inside Tools Box */
+.tools-box ul {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.tools-box li {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Front-End Tools Box Background */
+.front-end-tools {
+    background-color: #e6f7ff;
+}
+
+/* Back-End Tools Box Background */
+.back-end-tools {
+    background-color: #f0e6ff;
+}
+
+/* Project Section */
+#projects {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px; /* Increased space between sections */
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#projects .project-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.project-box {
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-box h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.project-box p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Skills Section */
+#skill {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px; /* Increased space between sections */
+}
+
+#skill h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#skill ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#skill li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact div {
+    margin-bottom: 15px;
+}
+
+#contact label {
+    font-size: 1.1rem;
+}
+
+#contact input,
+#contact textarea {
+    width: 300px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+    background: linear-gradient(135deg, #c9a6e5, #b3cde0); /* Lighter Gradient between Purple and Blue */
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Responsive Layout: Stacking tools boxes on smaller screens */
+@media (max-width: 768px) {
+    .tools-container {
+        flex-direction: column;
+    }
+
+    .tools-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+/* LinkedIn Button Styling */
+.linkedin-link {
+    display: inline-block;
+    background-color: #0077b5; /* LinkedIn Blue */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.linkedin-link:hover {
+    background-color: #005582; /* Darker LinkedIn Blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.linkedin-link:focus {
+    outline: none; /* Remove the default focus outline */
+    box-shadow: 0 0 5px rgba(0, 119, 181, 0.7); /* Focus outline with blue */
+}
+html {
+    scroll-behavior: smooth;
+}
+/* تنسيق الموقع للهواتف المحمولة */
+body {
+    font-size: 14px; /* حجم الخط صغير */
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column; /* ترتيب الروابط بشكل عمودي */
+    align-items: center; /* محاذاة العناصر في المنتصف */
+}
+
+nav ul li {
+    margin: 10px 0; /* إضافة مسافة بين العناصر */
+}
+@media (min-width: 768px) {
+    body {
+        font-size: 16px; /* زيادة حجم الخط للأجهزة اللوحية */
+    }
+
+    nav ul {
+        flex-direction: row; /* تغيير ترتيب العناصر بشكل أفقي */
+        justify-content: center; /* توزيع العناصر بشكل متساوٍ في الوسط */
+    }
+
+    nav ul li {
+        margin: 0 15px; /* إضافة مسافة بين العناصر */
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px; /* زيادة حجم الخط للأجهزة المكتبية */
+    }
+
+    nav ul {
+        justify-content: flex-start; /* محاذاة الروابط إلى اليسار */
+    }
+
+    nav ul li {
+        margin: 0 20px; /* زيادة المسافة بين العناصر */
+    }
+
+    .container {
+        max-width: 1200px; /* جعل المساحة المتاحة أكبر للمحتوى */
+    }
+}
+body {
+    overflow-x: hidden; /* منع التمرير الأفقي */
+}
+button, a {
+    padding: 12px 20px;
+    font-size: 16px; /* زيادة حجم الخط لجعله واضحاً */
+}
